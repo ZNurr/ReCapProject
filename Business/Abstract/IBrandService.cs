@@ -1,19 +1,16 @@
 ﻿using Entities.Concrete;
-using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace Business.Abstract
 {
-     public interface ICarService
+    public interface IBrandService
     {
-        List<Car> GetAll();
+        List<Brand> GetAll();
 
-        Car GetById(int Id);
-        public List<CarDetailDto> GetCarDetails();
+        Brand GetById(int BrandId);
     }
 }

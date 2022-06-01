@@ -1,15 +1,19 @@
-﻿using Core.Entities;
+﻿using Core;
+using Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entities.Concrete
+namespace Entities.DTOs
 {
-    public class Brand : IEntity
+    public class CarDetailDto : IDto 
     {
+        public int CarId { get; set; }
         public int BrandId { get; set; }
         public string BrandName { get; set; }
+        public int DailyPrice { get; set; }
+
     }
 }
