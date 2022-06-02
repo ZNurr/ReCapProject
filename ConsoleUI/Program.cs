@@ -11,7 +11,7 @@ static void CarTest()
     CarManager carManager = new CarManager(new EfCarDal());
     foreach (var car in carManager.GetCarDetails())
     {
-        Console.WriteLine(car.CarId + " " + car.BrandId + " " +car.BrandName + " " + car.DailyPrice);
+        Console.WriteLine(car.CarId + " " + car.BrandId + " " +car.BrandName + " " + " " +car.ColorId + " " + car.DailyPrice);
     }
 }
 
