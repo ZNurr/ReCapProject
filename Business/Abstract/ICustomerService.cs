@@ -8,10 +8,11 @@ using System.Threading.Tasks;
 
 namespace Business.Abstract
 {
-    public interface IBrandService
+    public interface ICustomerService
     {
-        IDataResult<List<Brand>> GetAll();
-
-        IDataResult<Brand> GetById(int BrandId);
+        IDataResult<List<Customer>> GetAll();
+        IResult Add(Customer customer);
+        IResult Delete(Customer customer);
+        IResult Update(Customer customer);
     }
 }
